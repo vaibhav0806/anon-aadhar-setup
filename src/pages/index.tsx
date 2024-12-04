@@ -33,7 +33,7 @@ export default function Home({ setUseTestAadhaar, useTestAadhaar }: HomeProps) {
         <p>Prove your Identity anonymously using your Aadhaar card.</p>
 
         {/* Import the Connect Button component */}
-        <LogInWithAnonAadhaar nullifierSeed={1234} fieldsToReveal={["revealAgeAbove18", "revealPinCode"]} />
+        <LogInWithAnonAadhaar nullifierSeed={1234} fieldsToReveal={["revealAgeAbove18", "revealPinCode", "revealGender", "revealState"]} />
 
         {useTestAadhaar ? (
           <p>
